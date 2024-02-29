@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .dtpcnt {
+        opacity: 0;
+      }
+      .responsive {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+      }
+    </style>
+
+    <script src=".js.html"></script>
+    <script async="" src="js/fbevents.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8" />
+    <meta name="title" content="American Plans" />
+    <meta name="description" content="American Plans" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>American Plans</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1078478800056796");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1078478800056796&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <script>
+      function wait(timeout) {
+        return new Promise((resolve) => {
+          setTimeout(resolve, timeout);
+        });
+      }
+
+      async function fbEvent() {
+        window._fbq.push("track", "Contact");
+        window._fbq.push("track", "InitiateCheckout");
+      }
+      async function offie() {
+        await wait(10000);
+        document.location.href = "offers.html";
+      }
+    </script>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+
+    <script
+      src="//b-js.ringba.com/CA1a0ca449beaa40cfb1d0e2c63b95e72a"
+      async=""
+    ></script>
+    <meta
+      http-equiv="delegate-ch"
+      content="sec-ch-ua https://go.apatrioticamerican.com; sec-ch-ua-mobile https://go.apatrioticamerican.com; sec-ch-ua-arch https://go.apatrioticamerican.com; sec-ch-ua-model https://go.apatrioticamerican.com; sec-ch-ua-platform https://go.apatrioticamerican.com; sec-ch-ua-platform-version https://go.apatrioticamerican.com; sec-ch-ua-bitness https://go.apatrioticamerican.com; sec-ch-ua-full-version-list https://go.apatrioticamerican.com; sec-ch-ua-full-version https://go.apatrioticamerican.com"
+    />
+    <style>
+      .dtpcnt {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      (function (c, d, f, h, t, b, n, u, k, l, m, e, p, v, q) {
+        function r(a) {
+          var c = d.cookie.match(new RegExp("(^| )" + a + "=([^;]+)"));
+          return c
+            ? c.pop()
+            : f.getItem(a + "-expires") &&
+              +f.getItem(a + "-expires") > new Date().getTime()
+            ? f.getItem(a)
+            : null;
+        }
+        q = "https:" === c.location.protocol ? "secure; " : "";
+        c[b] ||
+          ((c[b] = function (a) {
+            c[b].state.callbackQueue.push(a);
+          }),
+          (c[b].state = { callbackQueue: [] }),
+          (c[b].registerConversion = function (a) {
+            c[b].state.callbackQueue.push(a);
+          }),
+          (function () {
+            (m = /[?&]cpid(=([^&#]*)|&|#|$)/.exec(c.location.href)) &&
+              m[2] &&
+              ((e = m[2]), (p = r("vl-" + e)));
+            var a = r("vl-cid"),
+              b;
+            "savedCid" !== u ||
+              !a ||
+              (e && "undefined" !== typeof e) ||
+              (b = a);
+            k = d.createElement("script");
+            l = d.scripts[0];
+            k.src =
+              n +
+              (-1 === n.indexOf("?") ? "?" : "&") +
+              "oref=" +
+              h(d.referrer) +
+              "&ourl=" +
+              h(location[t]) +
+              "&opt=" +
+              h(d.title) +
+              "&vtm=" +
+              new Date().getTime() +
+              (b ? "&cid=" + b : "") +
+              (p ? "&uw=no" : "");
+            l.parentNode.insertBefore(k, l);
+            if (e) {
+              a = "vl-" + e;
+              b = q;
+              var g = new Date();
+              g.setTime(g.getTime() + 864e5);
+              d.cookie =
+                a +
+                "=1; " +
+                b +
+                "samesite=Strict; expires=" +
+                g.toGMTString() +
+                "; path=/";
+              f.setItem(a, "1");
+              f.setItem(a + "-expires", g.getTime());
+            }
+          })());
+      })(
+        window,
+        document,
+        localStorage,
+        encodeURIComponent,
+        "href",
+        "dtpCallback",
+        "https://go.apatrioticamerican.com/d/.js",
+        "savedCid"
+      );
+    </script>
+    <noscript
+      ><link
+        href="https://go.apatrioticamerican.com/d/.js?noscript=true&ourl="
+        rel="stylesheet"
+    /></noscript>
+  </head>
+  <body>
+    <div class="top"></div>
+    <div class="top-mid">
+      <img src="img/logos.png" width="100" height="auto" alt="sds" />
+    </div>
+    <div class="container">
+      <div
+        class="elementor-element elementor-element-196e8bf elementor-widget elementor-widget-html"
+        data-id="196e8bf"
+        data-element_type="widget"
+        data-widget_type="html.default"
+      >
+        <div class="elementor-widget-container">
+          <div class="Slides" style="">
+            <h2 class="text-center">
+              <font color="#003070">
+                Biden Announces $6,100 Available To All Americans
+              </font>
+            </h2>
+
+            <p>
+              Hurry, You Have Just 12 Hours Left to Claim Your
+              <span style="color: #004aad; font-weight: 700">$6100</span> for
+              Relief with medical care and $0 health plans!
+            </p>
+            <h4>Click below and answer 2 questions to see if you qualify.</h4>
+            <a class="cta_btn btn_1" data-q="yes">Tap Here to Qualify</a>
+          </div>
+          <div class="Slides" style="display: none">
+            <div class="main-sect">
+              <div class="order-tracking completed">
+                <span class="is-complete"></span>
+                <p>Question 1</p>
+              </div>
+              <div class="order-tracking">
+                <span class="is-complete"></span>
+                <p>Question 2</p>
+              </div>
+              <div class="order-tracking">
+                <span class="is-complete"></span>
+                <p>Result</p>
+              </div>
+            </div>
+
+            <h2 class="text-center">Do You Make Under $50,000 Per Year?</h2>
+            <a class="cta_btn btn_2" data-q="yes">Yes</a>
+            <a class="cta_btn btn_2" data-q="no">No</a>
+          </div>
+          <div class="Slides" style="display: none">
+            <div class="main-sect">
+              <div class="order-tracking completed">
+                <span class="is-complete"></span>
+                <p>Question 1</p>
+              </div>
+              <div class="order-tracking completed">
+                <span class="is-complete"></span>
+                <p>Question 2</p>
+              </div>
+              <div class="order-tracking">
+                <span class="is-complete"></span>
+                <p>Result</p>
+              </div>
+            </div>
+            <h2 class="text-center">Are You On Medicaid Or Medicare?</h2>
+            <a class="cta_btn btn_3" data-q="yes">Yes</a>
+            <a class="cta_btn btn_3" data-q="no">No</a>
+          </div>
+
+          <div class="mainbox yes-no-no" style="display: none">
+            <div class="boxme">
+              <div class="qualifyHeadline">Congratulations!</div>
+              <br />
+              <div class="loadingCopy">
+                <i
+                  class="fa fa-check-circle"
+                  style="color: green"
+                  aria-hidden="true"
+                ></i>
+                You pre-qualify! Call immediately to claim your
+                <strong style="color: #004aad">$6,300</strong> Medical Care
+                Relief and <strong style="color: #004aad">$0</strong> Health
+                Plan.
+              </div>
+
+              <h3>Tap Below to Call &amp; Claim Benefits</h3>
+              <a
+                href="tel:+18668860602"
+                onclick="fbEvent();offie();"
+                class="cta_btn"
+                ><i class="fa-solid fa-phone-volume fa-shake"></i> CALL (866) 886-0602</a
+              >
+              <br />
+              <div class="loadingCopy">
+                Act Now! Registration ends soon!
+                <span style="color: red; font-weight: 900"></span>
+                <span style="font-weight: bold"> </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mainbox yes-yes-no" style="display: none">
+            <div class="boxme">
+              <div class="qualifyHeadline">Congratulations!</div>
+              <br />
+              <div class="loadingCopy">
+                <i
+                  class="fa fa-check-circle"
+                  style="color: green"
+                  aria-hidden="true"
+                ></i>
+                You pre-qualify! Call immediately to claim your
+                <strong style="color: #004aad">$6,100</strong> Medical Care
+                Relief and <strong style="color: #004aad">$0</strong> Health
+                Plan.
+              </div>
+
+              <h3>Tap Below to Call &amp; Claim Benefits</h3>
+              <a
+                href="tel:+18668860602"
+                onclick="fbEvent();offie();"
+                class="cta_btn"
+                ><i class="fa-solid fa-phone-volume fa-shake"></i>CALL (866) 886-0602</a
+              >
+              <br />
+              <div class="loadingCopy">
+                Act Now! Registration ends soon!
+                <span style="color: red; font-weight: 900"></span>
+                <span style="font-weight: bold"> </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mainbox default" style="display: none">
+            <div class="boxme">
+              <div class="qualifyHeadline">Congratulations!</div>
+              <br />
+              <div class="loadingCopy">
+                <i
+                  class="fa fa-check-circle"
+                  style="color: green"
+                  aria-hidden="true"
+                ></i>
+                You Pre-Qualify for the
+                <strong style="color: #004aad">Medicaid Expansion</strong> that
+                provides coverage to people that lost coverage and lower income.
+              </div>
+
+              <h3>Tap Below to Call &amp; Claim Benefits</h3>
+              <a href="tel:+18337912967" onclick="offie();" class="cta_btn"
+                ><i class="fa-solid fa-phone-volume fa-shake"></i> CALL (833) 791-2967</a
+              >
+              <br />
+              <div class="loadingCopy">
+                Act Now! Registration ends soon!
+                <span style="color: red; font-weight: 900"></span>
+                <span style="font-weight: bold"> </span>
+              </div>
+
+              <p>�&nbsp;</p>
+              <div class="loadingCopy">
+                If you made a mistake you can click 'Go Back' to retake the
+                quiz.
+              </div>
+              <a onclick="refreshPage()" class="cta_btn">&lt; &lt; Go Back </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+    </div>
+
+    <footer>
+      <div class="container">
+        <div style="text-align: center">
+          <img src="img/ch.jpg" class="responsive" /> <br /><br />
+          <img src="img/secure.png" style="max-width: 115px" />
+        </div>
+        <br />
+
+        <p></p>
+        <p></p>
+      </div>
+    </footer>
+    <div class="policy center">
+      © 2024 American Plans - <a href="terms.html" target="_blank">Terms</a> |
+      <a href="privacy.html" target="_blank">Privacy</a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--div class="cta">
+  <div class="button-cta">Call Before 9:00 PM EST  <a href="tel:+18775090975"  onclick="fbEvent()"> <i class="fa-solid fa-phone-volume fa-shake"></i> (877) 509-0975</a></div>
+</div-->
+
+  
+    <script>
+      $(document).ready(function () {
+        $(".Slides").hide();
+        $(".mainbox").hide();
+        $(".Slides").eq(0).show();
+        var qlist = [];
+        $(".btn_1").on("click", function (e) {
+          e.preventDefault();
+          var qGet = $(this).data("q");
+          qlist.push(qGet);
+          console.log(qlist);
+          $(".Slides").hide();
+          $(".Slides").eq(1).show();
+        });
+        $(".btn_2").on("click", function (e) {
+          e.preventDefault();
+          var qGet = $(this).data("q");
+          qlist.push(qGet);
+          console.log(qlist);
+          $(".Slides").hide();
+          $(".Slides").eq(2).show();
+        });
+
+        $(".btn_3").on("click", function (e) {
+          e.preventDefault();
+          var qGet = $(this).data("q");
+          qlist.push(qGet);
+          $(".Slides").hide();
+          if (qlist.length > 0) {
+            var qClasses = qlist.join("-");
+            console.log(qClasses);
+            $(".mainbox").hide();
+            if ($("div").hasClass(qClasses)) {
+              $("." + qClasses).show();
+            } else {
+              $(".mainbox").hide();
+              $(".default").show();
+            }
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      var date = new Date();
+      var month = new Array(7);
+      month[0] = "January";
+      month[1] = "February";
+      month[2] = "March";
+      month[3] = "April";
+      month[4] = "May";
+      month[5] = "June";
+      month[6] = "July";
+      month[7] = "August";
+      month[8] = "September";
+      month[9] = "October";
+      month[10] = "November";
+      month[11] = "December";
+      var year = date.getYear();
+      if (year < 2000) {
+        year += 1900;
+      }
+      var currentDate =
+        month[date.getMonth()] + " " + date.getDate() + ", " + year;
+      var x = document.getElementsByClassName("current_date");
+      if (currentDate != "") {
+        for (var i = 0; i < x.length; i++) {
+          x[i].innerHTML = currentDate;
+        }
+      } else {
+        for (var i = 0; i < x.length; i++) {
+          x[i].innerHTML = currentDate;
+        }
+      }
+    </script>
+  </body>
+</html>
